@@ -3,7 +3,7 @@ let q2;
 let anime = 24;
 let answer;
 let tanswer;
-let a = 1;
+let a =
 
 document.getElementById("submit").onclick = function(){
    q2 = document.getElementById("q1").value;
@@ -24,3 +24,4 @@ document.getElementById("submit").onclick = function(){
    document.getElementById("answer").innerHTML = "This about " + answer + "H";
    document.getElementById("tanswer").innerHTML = "You will finish on " + tanswer + "AM";
 }
+
