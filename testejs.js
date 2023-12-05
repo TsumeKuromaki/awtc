@@ -3,6 +3,7 @@ let q2;
 let anime = 24;
 let answer;
 let tanswer;
+let a = 1;
 
 document.getElementById("submit").onclick = function(){
    q2 = document.getElementById("q1").value;
