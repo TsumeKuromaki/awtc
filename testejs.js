@@ -1,4 +1,4 @@
-let eps, tempo, respota;
+let eps, tempo, respota, algo;
 
 document.getElementById("botan").onclick = function gettempo(){
    eps = parseFloat(document.getElementById("eps").value); 
