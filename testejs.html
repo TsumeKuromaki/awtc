@@ -7,26 +7,19 @@
     <link rel="stylesheet" href="testejs.css">
 </head>
 <body>
-
-        <div class="contbox">
-            <div id="inside">
-                <label for="q1">how many eps</label>
-                <input type="text" id="q1">
-                <button type="button" id="submit">answer</button>
-                <label for="time">whats your time </label>
-                <input type="text" id="time">
-                <label for="" id="answer">The time </label>
-                <label for="time" id="tanswer"> Time answer </label>
-
-
-            </div>
-             
-        </div>
-
-
- 
-
-    <script src="testejs.js"> </script>
+    <div class="divcont">
+    <div class="box">
+        <form>
+            <label for="eps">Quantos eps </label>
+            <input type="number" id="eps" required/> <br>
+            <label for="hora"> Quantas horas sao agora </label>
+            <input type="number" id="hora" required/>
+            <button type="button" id="botan">Resposta</button>
+        </form>
+    <p id="resposta">Resposta</p>
     </div>
+
+    </div>
+    <script src="testejs.js"> </script>
 </body>
 </html>

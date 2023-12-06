@@ -1,27 +1,16 @@
-let q1;
-let q2;
-let anime = 24;
-let answer;
-let tanswer;
-let a =
+let eps, tempo, respota;
 
-document.getElementById("submit").onclick = function(){
-   q2 = document.getElementById("q1").value;
-   q2 = Number(q2);
-   answer = Math.round(q2 * anime / 60);
-   
-   if(tanswer > 24){
+document.getElementById("botan").onclick = function gettempo(){
+   eps = parseFloat(document.getElementById("eps").value); 
+   tempo = parseFloat(document.getElementById("hora").value);
+   let epsoma = eps * 24 / 60;
+   let tempofinal = epsoma + tempo;
 
-   q1 = document.getElementById("time").value;
-   q1 = Number(q1);
-   let qa = q1 - 24;
-   Math.round(tanswer) = qa + answer;}
-   else{
-      q1 = document.getElementById("time").value;
-      q1 = Number(q1);
-      tanswer = q1 + answer;
+   if(tempofinal >= 24){
+      tempofinal = tempofinal - 24;
+      document.getElementById("resposta").innerHTML = "teste " + tempofinal + "AM";
    }
-   document.getElementById("answer").innerHTML = "This about " + answer + "H";
-   document.getElementById("tanswer").innerHTML = "You will finish on " + tanswer + "AM";
+   else{
+      document.getElementById("resposta").innerHTML = "teste " + tempofinal;
+   }
 }
-
